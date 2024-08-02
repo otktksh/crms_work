@@ -15,4 +15,4 @@ export const companies = [
     'id': 5,
     'name': '鈴木生花店'
   },
-]
+];

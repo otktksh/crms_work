@@ -169,7 +169,7 @@ body {
 
 .content-search .content-header {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #1e1e3a;
   border-radius: 5px; /* 箱の角を少し丸く */
   margin: 0 auto;
@@ -180,7 +180,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .search-form__label { /* 検索見出しを一気に選択し、フレックス化 */
@@ -289,7 +289,7 @@ body {
 
 .content-search .search-form__submit {
   width: 30%;
-  height: 30px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -335,7 +335,7 @@ body {
 
 .content-list-box .list-header {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #1e1e3a;
   border-radius: 5px;
   margin: 0 auto;
@@ -345,7 +345,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 /* 一覧が表示されるボックス */
@@ -506,7 +506,7 @@ body {
 
 .content-registration .content-header {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #1e1e3a;
   border-radius: 5px;
   margin: 0 auto;
@@ -517,7 +517,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 
@@ -614,7 +614,7 @@ body {
 
 .content-registration .registration-form__submit {
   width: 30%;
-  height: 30px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -645,7 +645,7 @@ body {
 
 .content-edit .content-header {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #1e1e3a;
   border-radius: 5px;
   margin: 0 auto;
@@ -656,7 +656,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 
@@ -753,7 +753,7 @@ body {
 
 .content-edit .edit-form__submit {
   width: 30%;
-  height: 30px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -784,7 +784,7 @@ body {
 
 .content-delete .content-header {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: #691313;
   border-radius: 5px;
   margin: 0 auto;
@@ -795,7 +795,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 
@@ -892,7 +892,7 @@ body {
 
 .content-delete .delete-form__submit {
   width: 30%;
-  height: 30px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
 
