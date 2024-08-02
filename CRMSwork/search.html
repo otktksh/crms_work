@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顧客管理システム-検索</title>
+  <link href=".\css\reset.css" rel="stylesheet" type="text/css"/>
+  <link href=".\css\style.css" rel="stylesheet" type="text/css"/>
+  <meta name="description" content="【課題用】顧客管理システム 検索ページ">
+</head>
+<body>
+  <div class="main-wrapper">
+
+    <header class="main-header">
+      <div class="logo">
+        <h1><a href="./top.html">顧客管理システム</a></h1>
+      </div>
+      <nav>
+        <ul class="header_menu">
+          <li><a href="./top.html">トップ</a></li>
+          <li class="header_menu-child"><a href="./search.html">検索</a></li>
+          <li><a href="./registration.html">登録</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="content-search">
+        <div class="content-header">
+          <h2>検索条件</h2>
+        </div>
+        <form id="search-form">
+          <div class="search-form__label">
+            <h3>顧客名</h3>
+            <div class="form__box">
+              <input type="text" id="name" name="name" placeholder="※部分一致" autocomplete="off">
+            </div>
+          </div>
+          <div class="error-box">
+            <div class="error-message" id="error-message-name"></div>
+          </div>
+          <div class="search-form__label">
+            <h3>顧客名カナ</h3>
+            <div class="form__box">
+              <input type="text" id="name-kana" name="name_kana" placeholder="※部分一致" autocomplete="off">
+            </div>
+          </div>
+          <div class="error-box">
+            <div class="error-message" id="error-message-name-kana"></div>
+          </div>
+          <div class="search-form__label">
+            <h3>性別</h3>
+            <div class="form__box-gender">
+              <input type="radio" id="genderChoice1" name="choice" value="male" />
+              <label for="genderChoice1">男性</label>
+              <input type="radio" id="genderChoice2" name="choice" value="female" />
+              <label for="genderChoice2">女性</label>
+              <input type="radio" id="genderChoice3" name="choice" value="all" checked/>
+              <label for="genderChoice3">全て</label>
+            </div>
+          </div>
+          <div class="error-box">
+            <div class="error-message" id="error-message-gender"></div>
+          </div>
+          <div class="search-form__label">
+            <h3>生年月日</h3>
+            <div class="form__box-birth_date">
+              <input type="date" id="calendar-start" name="calendar" max="9999-12-31">
+              <p>～</p>
+              <input type="date" id="calendar-end" name="calendar" max="9999-12-31">
+            </div>
+          </div>
+          <div class="error-box">
+            <div class="error-message" id="error-message-date"></div>
+          </div>
+          <div class="search-form__label">
+            <h3>所属会社</h3>
+            <div class="form__box">
+              <select name="company" id="company-select" class="company-select-box">
+                <option>全て</option>
+                <option>株式会社ア</option>
+                <option>株式会社イ</option>
+                <option>株式会社ウ</option>
+                <option>株式会社エ－ア</option>
+                <option>株式会社オーイ</option>
+                <option>株式会社カーウ</option>
+                <option>株式会社キーアーイ</option>
+                <option>株式会社クーイーウ</option>
+                <option>株式会社ケーウーエ</option>
+              </select>
+            </div>
+          </div>
+          <div class="error-box">
+            <div class="error-message" id="error-message-company"></div>
+          </div>
+          <div class="search-form__submit">
+            <input type="submit" id="submit" value='🔍検索'>
+          </div>
+        </form>
+      </div>
+      <div class="content-list">
+        <div class="content-list-box">
+          <div class="list-header">
+            <h2>検索結果一覧</h2>
+          </div>
+          <div class="table-box">
+            <div class="list-table-header">
+              <table>
+                <tr>
+                  <th class="table-id">顧客ID</th>
+                  <th class="table-name">顧客名<br>カナ</th>
+                  <th class="table-mail_tel">メールアドレス<br>電話番号</th>
+                  <th class="table-company">所属会社</th>
+                  <th class="table-new_last">新規登録日時<br>最終更新日時</th>
+                  <th class="table-edit-header">編集</th>
+                  <th class="table-delete-header">削除</th>
+                </tr>
+              </table>
+            </div>
+            <table class="list-table">
+              <tr class="list-table-child1">
+                <td class="table-id">000001A</td>
+                <td class="table-name">山田太郎<br>ヤマダタロウ</td>
+                <td class="table-mail_tel">yamada.taro@ymd.co.jp<br>080-0000-0000</td>
+                <td class="table-company">株式会社ヤマダ電気</td>
+                <td class="table-new_last">2024/1/1<br>2027/7/1</td>
+                <td class="table-edit"><a href="./edit.html">編集</a></td>
+                <td class="table-delete"><a href="./delete.html">削除</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <script src="./js/app2.js"></script>
+</body>
+</html>

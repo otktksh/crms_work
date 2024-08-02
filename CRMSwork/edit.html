@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顧客管理システム-顧客情報詳細</title>
+  <link href=".\css\reset.css" rel="stylesheet" type="text/css"/>
+  <link href=".\css\style.css" rel="stylesheet" type="text/css"/>
+  <meta name="description" content="【課題用】顧客管理システム 編集ページ">
+</head>
+<body>
+  <div class="main-wrapper">
+
+    <header class="main-header">
+      <div class="logo">
+        <h1><a href="./top.html">顧客管理システム</a></h1>
+      </div>
+      <nav>
+        <ul class="header_menu">
+          <li><a href="./top.html">トップ</a></li>
+          <li><a href="./search.html">検索</a></li>
+          <li><a href="./registration.html">登録</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="content-edit">
+        <div class="content-header">
+          <h2>顧客編集</h2>
+        </div>
+        <form>
+          <div class="edit-form__label">
+            <h3>顧客名</h3>
+            <div class="form__box">
+              <input type="text" name="name">
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>顧客名カナ</h3>
+            <div class="form__box">
+              <input type="text" name="name_kana">
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>メールアドレス</h3>
+            <div class="form__box">
+              <input type="text" name="mail">
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>電話番号</h3>
+            <div class="form__box">
+              <input type="text" name="tel">
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>性別</h3>
+            <div class="form__box-gender">
+              <input type="radio" id="contactChoice1" name="contact" value="male" />
+              <label for="contactChoice1">男性</label>
+              <input type="radio" id="contactChoice2" name="contact" value="female" />
+              <label for="contactChoice2">女性</label>
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>生年月日</h3>
+            <div class="form__box-birth_date">
+              <input type="date" name="calendar" max="9999-12-31">
+            </div>
+          </div>
+          <div class="edit-form__label">
+            <h3>所属会社</h3>
+            <div class="form__box">
+              <select name="company" id="companyselect" class="company-select-box">
+                <option>全て</option>
+                <option>株式会社ア</option>
+                <option>株式会社イ</option>
+                <option>株式会社ウ</option>
+                <option>株式会社エ－ア</option>
+                <option>株式会社オーイ</option>
+                <option>株式会社カーウ</option>
+                <option>株式会社キーアーイ</option>
+                <option>株式会社クーイーウ</option>
+                <option>株式会社ケーウーエ</option>
+              </select>
+            </div>
+          </div>
+          <div class="edit-form__submit">
+            <input type="submit" value='🖊編集'>
+          </div>
+        </form>
+      </div>
+      
+    </main>
+
+  </div>
+</body>
+</html>
